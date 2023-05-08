@@ -18,7 +18,7 @@ app.get("/", (request, response) => {
   });
 });
 
-app.post("/userProfile", userProfileActions.createUserProfile);
+app.post("/userProfile", userProfileActions.saveUserProfile);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
