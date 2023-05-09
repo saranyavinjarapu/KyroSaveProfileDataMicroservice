@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon functions/api.js",
+    "build": "netlify deploy --prod"
   },
   "keywords": [],
   "author": "Saranya Vinjarapu",
@@ -14,7 +14,10 @@
     "axios": "^1.4.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
+    "netlify-cli": "^15.0.2",
+    "netlify-lambda": "^2.0.16",
     "nodemon": "^2.0.22",
-    "pg": "^8.10.0"
+    "pg": "^8.10.0",
+    "serverless-http": "^3.2.0"
   }
 }
