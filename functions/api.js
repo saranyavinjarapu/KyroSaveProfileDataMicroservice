@@ -1,10 +1,11 @@
+require("dotenv").config();
 const userProfileActions = require("./UserProfileActions");
 const express = require("express");
 const serverless = require("serverless-http");
 const bodyParser = require("body-parser");
 const app = express();
 const router = express.Router();
-const port = 4000;
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(

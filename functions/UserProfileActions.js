@@ -1,13 +1,5 @@
 const { response } = require("express");
-const { Pool } = require("pg");
-
-const pool = new Pool({
-  host: "localhost",
-  user: "postgres",
-  database: "kyro",
-  password: "Foodie@123",
-  port: 5432,
-});
+const pool = require("./db.config");
 
 const processErrorMessage = (err, message) => {
   let errorStackResponse = err.stack.split("\n")[0];
